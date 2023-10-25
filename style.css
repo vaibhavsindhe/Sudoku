@@ -1,0 +1,216 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #040720;
+    color: white;
+}
+#mainPage{
+    background-color: white;
+}
+.border{
+    height: 55px;
+    width: 100%;
+    border: 2px solid black;
+    background-color: #040720;
+}
+#interface{
+    color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+#choose{
+    height: 400px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    /* border: 2px solid black; */
+}
+#choose h1{
+    font-size: 60px;
+    color:#040720 ;
+    text-decoration: #040720 underline;
+    margin-top: 40px;
+}
+h2{
+    text-decoration: yellow underline;
+}
+#mainImage{
+    height: 500px;
+    width: 800px;
+    background-image: url("Assets/sudokuImage.jpg");
+    background-size: cover;
+}
+hr{
+    width: 500px;
+}
+a{
+    text-decoration: none;
+    color: none;
+}
+#board{
+    width: 450px;
+    height: 450px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    border: 4px solid white;
+}
+.tile ,.number{
+    width: 48px;
+    height: 48px;
+    border: 1px solid gray;
+
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tile:hover , .number:hover{
+  background-color:  rgb(0, 170, 255);
+  color: white;
+}
+#digits{
+    width: 450px;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.number{
+    width: 44px;
+    margin: 0 2px;
+    border: 1px solid white;
+}
+.number-color{
+    color: rgb(0, 170, 255);
+}
+.wrong{
+    color: red;
+    border: 1px solid red;
+}
+.correct{
+    color: rgb(0, 211, 0);
+    border: 1px solid rgb(0, 211, 0);
+}
+.number-selected{
+    background-color: rgb(0, 170, 255);
+    color: whitesmoke;
+}
+.ocupied{
+    background-color:whitesmoke;
+    color: black;
+    border: 1px solid gray;
+}
+.vertical-line{
+    border-right: 2.5px solid white;
+}
+.horizontal-line{
+    border-bottom: 2.5px solid white;
+}
+.button{
+    height: 50px;
+    width: 150px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 2px solid black;
+    background-color: rgb(0, 170, 255);
+    font-size: 20px;
+    color: whitesmoke;
+    border: 1px solid white;
+    cursor: pointer;
+}
+.button:hover{
+    box-shadow: 2px 2px 2px black;
+    transform: translate(-2px 0); 
+    background-color:white ;
+    color:  rgb(0, 170, 255);
+    border: 2px solid rgb(0, 170, 255);
+}
+#home{
+    border: none;
+    background-color: #040720;
+    color: white;
+    height: 50px;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+}
+#home span{
+    font-size: 50px;
+}
+.instructions{
+  height: 605px;
+  width: 500px;
+  border: 2px solid yellow;
+  position: absolute;
+  top: 80px;
+  left: 510px; 
+  background-color: #040720;
+  padding: 5px;
+}
+.smallboard{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: centers;
+}
+#instrBoard{
+    height: 124.8px;
+    width: 124.8px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid white;
+}
+.box{
+    height: 40px;
+    width: 40px;
+    border: 1px solid white;
+}
+#curser{
+    position: absolute;
+    margin-top: 10px ;
+    animation: curserAnimation 4s ease-in-out 0s infinite normal ;
+    left: 280px;
+}
+#imageExamples{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 130px;
+    width: 500px;
+    margin: 50px 0 50px 0;
+}
+.notCorrect {
+    color: red;
+}
+.right{
+    color: green;
+}
+.images{
+    height: 120px;
+    width: 150px;
+}
+.animation{
+    animation:slideAnimation 1s ease-in-out 0s 1 normal forwards; 
+}
+@keyframes curserAnimation {
+    0%{left: 280px;}
+    50%{left: 360px;}
+   100%{left: 170px; margin-top: 60px;}
+}
+@keyframes slideAnimation {
+    from{top: 80px;}
+    to{top: -800px;}
+    
+}
+
+
+
+
+

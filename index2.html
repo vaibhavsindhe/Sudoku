@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+    <title>GetSolution</title>
+</head>
+<body>
+    <div>  
+        <h1>Sudoku</h1>
+        <hr>
+        <div id="board"></div>
+        <br>
+        <div id="digits"></div>
+        <button id="getsolution" class="button">Get Solution</button>
+    </div>
+    <button id="home"><span class="material-symbols-outlined">home_app_logo </span></button>
+    <div class="instructions">
+        <h2>How to Play?</h2>    
+        <p>1.Select the number and place it on the sudoku as per your requirement.</p>
+        <div class="smallboard">
+            <div id="instrBoard"></div>
+            <div id="instrBoard2"></div>
+            <div id="curser"><span class="material-symbols-outlined">arrow_selector_tool </span></div>
+        </div>
+        <p>2.Place numbers in such a way that no two simmilar numbers occur in same row,column or smaller grid(3*3)</p>
+        <div id="imageExamples">
+            <p class="notCorrect"><img src="Assets/img1.png" alt="ex1" class="images"><br>Wrong!</p>
+            <p class="notCorrect"><img src="Assets/img2.png" alt="ex2" class="images"><br>Wrong!</p>
+            <p class="right"><img src="Assets/img3.png" alt="ex3"class="images"><br>Right</p>
+        </div>
+        <button id="start2" class="startBtn button">start</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script> 
+    <script src="app.js"></script>
+
+</body>
+</html>
